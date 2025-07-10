@@ -11,7 +11,7 @@ public class App {
         int inches = scanner.nextInt();
         double price = scanner.nextDouble();
 
-        Shop mainShop = new Shop("DNS", "Orel");
+        Shop mainShop = new Shop("DNS", "Moscow");
         LocalDate hireDate = LocalDate.of(2024, 9, 25);
         TV myTV = new TV(name, inches, price, hireDate, mainShop);
 
