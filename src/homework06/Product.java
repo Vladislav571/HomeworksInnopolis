@@ -11,11 +11,8 @@ public class Product {
         this.name = name;
         this.price = price;
     }
-    public Product(String params){
-        String[] paramArray = params.split("=");
-        this.name = paramArray[0];
-        this.price = Double.valueOf(paramArray[1].trim());
-    }
+
+
     public String getName() {
         return name;
     }
