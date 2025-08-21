@@ -8,7 +8,7 @@ public class Car {
     private String model;
     private int yearOfRelease;
     private int power;
-    private  int boost;
+    private  int boost; // ускорение
     private  int pendant; // подвеска
     private  int durability; // долговечность
 

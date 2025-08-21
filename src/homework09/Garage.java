@@ -20,7 +20,7 @@ public class Garage {
     public void modificateCar(int carNumber){
         Car car = parcedCars[carNumber];
         System.out.println(car.toString());
-        System.out.println("Выберите какой параметр хотите изменить: мощность");
+        System.out.println("Выберите какой параметр хотите изменить: ");
         Scanner scanner = new Scanner(System.in);
 
         switch (scanner.nextLine()){
@@ -28,6 +28,11 @@ public class Garage {
                 System.out.println("Введите новое значение мощности: ");
                 int newPower  = scanner.nextInt();
                 car.setPower(newPower);
+            }
+            case "ускорение" ->{
+                System.out.println("Введите новое значение ускорения: ");
+                int newBoost = scanner.nextInt();
+                car.setBoost(newBoost);
             }
 
             default -> System.out.println("Выбран неверный параметр");
